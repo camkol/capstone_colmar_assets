@@ -3,10 +3,12 @@
 ## Components
 
 1. HTML
-2. CSS
+   -Bootstrap
+1. CSS
    -SASS
 
 ## Notes
 
 -Established foundation mark-up
 -Added SASS
+-Setup Bootstrap
