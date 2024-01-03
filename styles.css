@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+}
+body header {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header #combo {
+  margin-left: 24px;
+  text-decoration: none;
+  color: rgb(190, 190, 190);
+}
+body header #combo img {
+  height: 42px;
+}
+body header #combo span {
+  font-size: 24px;
+}
+body header #combo span strong {
+  color: rgb(90, 90, 90);
+}
+body header .logos {
+  vertical-align: middle;
+}
+body header nav ul {
+  text-align: right;
+  display: inline-block;
+  list-style: none;
+}
+body header nav ul #one,
+body header nav ul #two,
+body header nav ul #three {
+  margin-right: 16px;
+}
+body header nav ul #four {
+  margin-right: 24px;
+}
+body header nav ul li {
+  text-decoration: none;
+  display: inline;
+}
+body #start {
+  background-color: rgb(190, 190, 190);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+body #start .starting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #start #banner {
+  padding: 32px 24px;
+}
+body #start #banner img {
+  width: 60%;
+}
+body #start .starters {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=styles.css.map */
