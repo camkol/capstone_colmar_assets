@@ -17,181 +17,233 @@ $background-color_4: rgb(170, 170, 170);
 body {
   font-family: "Roboto", sans-serif;
   width: 100%;
-  header {
-    height: 64px;
-    display: flex;
+}
+header {
+  height: 64px;
+  display: flex;
 
-    justify-content: space-between;
-    align-items: center;
-    #combo {
-      margin-left: 24px;
-      text-decoration: none;
-      color: $color_2;
-      img {
-        height: 42px;
-      }
-      span {
-        font-size: 24px;
-        strong {
-          color: $color_1;
-        }
-      }
+  justify-content: space-between;
+  align-items: center;
+  #combo {
+    margin-left: 24px;
+    text-decoration: none;
+    color: $color_2;
+    img {
+      height: 42px;
     }
-    .logos {
-      //display: inline;
-      vertical-align: middle;
-    }
-
-    nav {
-      ul {
-        text-align: right;
-        display: inline-block;
-        list-style: none;
-        #one,
-        #two,
-        #three {
-          margin-right: 16px;
-        }
-        #four {
-          margin-right: 24px;
-        }
-        li {
-          text-decoration: none;
-          display: inline;
-        }
+    span {
+      font-size: 24px;
+      strong {
+        color: $color_1;
       }
     }
   }
-  #start {
-    background-color: $background-color_1;
+  .logos {
+    //display: inline;
+    vertical-align: middle;
+  }
+
+  nav {
+    ul {
+      text-align: right;
+      display: inline-block;
+      list-style: none;
+      #one,
+      #two,
+      #three {
+        margin-right: 16px;
+      }
+      #four {
+        margin-right: 24px;
+      }
+      li {
+        text-decoration: none;
+        display: inline;
+      }
+    }
+  }
+}
+#start {
+  background-color: $background-color_1;
+  display: flex;
+  align-items: center;
+
+  .starting {
     display: flex;
+    justify-content: left;
     align-items: center;
-
-    .starting {
-      display: flex;
-      justify-content: left;
-      align-items: center;
-    }
-    #banner {
-      padding: 32px 24px;
-      width: 60%;
-      img {
-        width: 100%;
-      }
-    }
-    #something {
-      width: 330px;
-      padding-right: 50px;
-      h1 {
-        font-size: 36px;
-      }
-      h3 {
-        margin: 24px 0;
-      }
-    }
-    .starters {
-      display: flex;
-      flex-direction: column;
-
-      align-items: center;
-    }
-    #button {
-      background-color: $background-color_3;
-      color: $color_2;
-      justify-content: center;
-      padding: 8px;
+  }
+  #banner {
+    padding: 32px 24px;
+    width: 60%;
+    img {
       width: 100%;
     }
   }
-  #practice {
-    padding: 32px 24px;
-    background-color: $background-color_2;
+  #something {
+    width: 330px;
+    padding-right: 50px;
+    h1 {
+      font-size: 36px;
+    }
+    h3 {
+      margin: 24px 0;
+    }
+  }
+  .starters {
     display: flex;
+    flex-direction: column;
 
-    #practicing {
-      padding-right: 24px;
-      width: 60%;
-      img {
-        width: 100%;
-        margin-bottom: 32px;
-      }
-      h2 {
-        font-size: 32px;
-      }
-      p {
-        margin-top: 24px;
+    align-items: center;
+  }
+  #button {
+    background-color: $background-color_3;
+    color: $color_2;
+    justify-content: center;
+    padding: 8px;
+    width: 100%;
+  }
+}
+#practice {
+  padding: 32px 24px;
+  background-color: $background-color_2;
+  display: flex;
+
+  #practicing {
+    padding-right: 24px;
+    width: 60%;
+    img {
+      width: 100%;
+      margin-bottom: 32px;
+    }
+    h2 {
+      font-size: 32px;
+    }
+    p {
+      margin-top: 24px;
+    }
+  }
+  #information {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    #imSpFirst {
+      .imageSpec {
+        padding-top: 0;
       }
     }
-    #information {
-      width: 40%;
+    .informations {
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      position: relative;
-      #imSpFirst {
-        .imageSpec {
-          padding-top: 0;
+      border-left: 1px solid $color_2;
+
+      .imageSpec {
+        width: 35%;
+        padding: 16px;
+        img {
+          width: 100%;
         }
       }
-      .informations {
+
+      .infoSpec {
+        display: block;
+        width: 65%;
         display: flex;
-        border-left: 1px solid $color_2;
-        // border-bottom: 1px solid $color_2;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
 
-        .imageSpec {
-          width: 35%;
-          padding: 16px;
-          img {
-            width: 100%;
-          }
+        p {
+          margin: 8px 0;
         }
-
-        .infoSpec {
-          display: block;
-          width: 65%;
-          display: flex;
-          align-items: flex-start;
-          flex-direction: column;
-          justify-content: center;
-
-          p {
-            margin: 8px 0;
-          }
-          p,
-          a {
-            font-size: 14px;
-          }
+        p,
+        a {
+          font-size: 14px;
         }
       }
     }
   }
-  #learning {
-    background-color: $background-color_4;
-    padding: 32px 72px;
+}
+#learning {
+  background-color: $background-color_4;
+  padding: 32px 72px;
+}
+#startLearn {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+#courses {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 32px;
+  .course {
+    height: auto;
+    background-color: $background-color_2;
+    img {
+      width: 100%;
+    }
+    div {
+      padding: 16px 16px 24px 16px;
+      p {
+        font-size: 12px;
+      }
+      .coursing {
+        margin: 8px 0;
+      }
+    }
   }
-  #startLearn {
+}
+#thesisExhibit {
+  padding: 32px 24px;
+  background-color: $background-color_2;
+  display: flex;
+  #teTitle {
     font-size: 24px;
     text-align: center;
     margin-bottom: 32px;
   }
-  #courses {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 32px;
-    .course {
-      height: auto;
-      background-color: $background-color_2;
-      img {
-        width: 100%;
-      }
-      div {
-        padding: 16px 16px 24px 16px;
-        p {
-          font-size: 12px;
+
+  #thesis {
+    padding-right: 24px;
+    width: 60%;
+    video {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+  }
+  #exhibit {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+
+    .exhInfo {
+      display: flex;
+
+      .exhImage {
+        width: 35%;
+        padding: 16px;
+        img {
+          width: 100%;
         }
-        .coursing {
+      }
+
+      .exhiSpec {
+        display: block;
+        width: 65%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
           margin: 8px 0;
+
+          font-size: 14px;
         }
       }
     }

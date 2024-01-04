@@ -8,126 +8,129 @@ body {
   font-family: "Roboto", sans-serif;
   width: 100%;
 }
-body header {
+
+header {
   height: 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-body header #combo {
+header #combo {
   margin-left: 24px;
   text-decoration: none;
   color: rgb(190, 190, 190);
 }
-body header #combo img {
+header #combo img {
   height: 42px;
 }
-body header #combo span {
+header #combo span {
   font-size: 24px;
 }
-body header #combo span strong {
+header #combo span strong {
   color: rgb(90, 90, 90);
 }
-body header .logos {
+header .logos {
   vertical-align: middle;
 }
-body header nav ul {
+header nav ul {
   text-align: right;
   display: inline-block;
   list-style: none;
 }
-body header nav ul #one,
-body header nav ul #two,
-body header nav ul #three {
+header nav ul #one,
+header nav ul #two,
+header nav ul #three {
   margin-right: 16px;
 }
-body header nav ul #four {
+header nav ul #four {
   margin-right: 24px;
 }
-body header nav ul li {
+header nav ul li {
   text-decoration: none;
   display: inline;
 }
-body #start {
+
+#start {
   background-color: rgb(190, 190, 190);
   display: flex;
   align-items: center;
 }
-body #start .starting {
+#start .starting {
   display: flex;
   justify-content: left;
   align-items: center;
 }
-body #start #banner {
+#start #banner {
   padding: 32px 24px;
   width: 60%;
 }
-body #start #banner img {
+#start #banner img {
   width: 100%;
 }
-body #start #something {
+#start #something {
   width: 330px;
   padding-right: 50px;
 }
-body #start #something h1 {
+#start #something h1 {
   font-size: 36px;
 }
-body #start #something h3 {
+#start #something h3 {
   margin: 24px 0;
 }
-body #start .starters {
+#start .starters {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body #start #button {
+#start #button {
   background-color: rgb(110, 110, 110);
   color: rgb(190, 190, 190);
   justify-content: center;
   padding: 8px;
   width: 100%;
 }
-body #practice {
+
+#practice {
   padding: 32px 24px;
   background-color: rgb(220, 220, 220);
   display: flex;
 }
-body #practice #practicing {
+#practice #practicing {
   padding-right: 24px;
   width: 60%;
 }
-body #practice #practicing img {
+#practice #practicing img {
   width: 100%;
   margin-bottom: 32px;
 }
-body #practice #practicing h2 {
+#practice #practicing h2 {
   font-size: 32px;
 }
-body #practice #practicing p {
+#practice #practicing p {
   margin-top: 24px;
 }
-body #practice #information {
+#practice #information {
   width: 40%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   position: relative;
 }
-body #practice #information #imSpFirst .imageSpec {
+#practice #information #imSpFirst .imageSpec {
   padding-top: 0;
 }
-body #practice #information .informations {
+#practice #information .informations {
   display: flex;
   border-left: 1px solid rgb(190, 190, 190);
 }
-body #practice #information .informations .imageSpec {
+#practice #information .informations .imageSpec {
   width: 35%;
   padding: 16px;
 }
-body #practice #information .informations .imageSpec img {
+#practice #information .informations .imageSpec img {
   width: 100%;
 }
-body #practice #information .informations .infoSpec {
+#practice #information .informations .infoSpec {
   display: block;
   width: 65%;
   display: flex;
@@ -135,41 +138,92 @@ body #practice #information .informations .infoSpec {
   flex-direction: column;
   justify-content: center;
 }
-body #practice #information .informations .infoSpec p {
+#practice #information .informations .infoSpec p {
   margin: 8px 0;
 }
-body #practice #information .informations .infoSpec p,
-body #practice #information .informations .infoSpec a {
+#practice #information .informations .infoSpec p,
+#practice #information .informations .infoSpec a {
   font-size: 14px;
 }
-body #learning {
+
+#learning {
   background-color: rgb(170, 170, 170);
   padding: 32px 72px;
 }
-body #startLearn {
+
+#startLearn {
   font-size: 24px;
   text-align: center;
   margin-bottom: 32px;
 }
-body #courses {
+
+#courses {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 32px;
 }
-body #courses .course {
+#courses .course {
   height: auto;
   background-color: rgb(220, 220, 220);
 }
-body #courses .course img {
+#courses .course img {
   width: 100%;
 }
-body #courses .course div {
+#courses .course div {
   padding: 16px 16px 24px 16px;
 }
-body #courses .course div p {
+#courses .course div p {
   font-size: 12px;
 }
-body #courses .course div .coursing {
+#courses .course div .coursing {
   margin: 8px 0;
+}
+
+#thesisExhibit {
+  padding: 32px 24px;
+  background-color: rgb(220, 220, 220);
+  display: flex;
+}
+#thesisExhibit #teTitle {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+#thesisExhibit #thesis {
+  padding-right: 24px;
+  width: 60%;
+}
+#thesisExhibit #thesis video {
+  width: 100%;
+  margin-bottom: 24px;
+}
+#thesisExhibit #exhibit {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+#thesisExhibit #exhibit .exhInfo {
+  display: flex;
+}
+#thesisExhibit #exhibit .exhInfo .exhImage {
+  width: 35%;
+  padding: 16px;
+}
+#thesisExhibit #exhibit .exhInfo .exhImage img {
+  width: 100%;
+}
+#thesisExhibit #exhibit .exhInfo .exhiSpec {
+  display: block;
+  width: 65%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+#thesisExhibit #exhibit .exhInfo .exhiSpec p {
+  margin: 8px 0;
+  font-size: 14px;
 }/*# sourceMappingURL=styles.css.map */
