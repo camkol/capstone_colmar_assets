@@ -65,7 +65,7 @@ body {
     background-color: $background-color_1;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+
     .starting {
       display: flex;
       justify-content: left;
@@ -103,12 +103,12 @@ body {
     }
   }
   #practice {
+    padding: 32px 24px;
     background-color: $background-color_2;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+
     #practicing {
-      padding: 32px 24px;
+      padding-right: 24px;
       width: 60%;
       img {
         width: 100%;
@@ -125,9 +125,15 @@ body {
       width: 40%;
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+      #imSpFirst {
+        .imageSpec {
+          padding-top: 0;
+        }
+      }
       .informations {
         display: flex;
-        flex-direction: row;
         border-left: 1px solid $color_2;
         // border-bottom: 1px solid $color_2;
 
@@ -138,6 +144,7 @@ body {
             width: 100%;
           }
         }
+
         .infoSpec {
           display: block;
           width: 65%;
@@ -145,7 +152,7 @@ body {
           align-items: flex-start;
           flex-direction: column;
           justify-content: center;
-          padding-right: 20px;
+
           p {
             margin: 8px 0;
           }

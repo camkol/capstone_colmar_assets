@@ -10,3 +10,6 @@
 
 -Established foundation mark-up
 -Added SASS
+-Finished header
+-Finished #start
+-Finished #practice

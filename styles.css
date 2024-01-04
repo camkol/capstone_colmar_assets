@@ -52,7 +52,6 @@ body #start {
   background-color: rgb(190, 190, 190);
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
 }
 body #start .starting {
   display: flex;
@@ -89,13 +88,12 @@ body #start #button {
   width: 100%;
 }
 body #practice {
+  padding: 32px 24px;
   background-color: rgb(220, 220, 220);
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
 }
 body #practice #practicing {
-  padding: 32px 24px;
+  padding-right: 24px;
   width: 60%;
 }
 body #practice #practicing img {
@@ -112,10 +110,14 @@ body #practice #information {
   width: 40%;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+body #practice #information #imSpFirst .imageSpec {
+  padding-top: 0;
 }
 body #practice #information .informations {
   display: flex;
-  flex-direction: row;
   border-left: 1px solid rgb(190, 190, 190);
 }
 body #practice #information .informations .imageSpec {
@@ -132,7 +134,6 @@ body #practice #information .informations .infoSpec {
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
-  padding-right: 20px;
 }
 body #practice #information .informations .infoSpec p {
   margin: 8px 0;
