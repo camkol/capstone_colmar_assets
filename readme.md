@@ -15,3 +15,4 @@
 -Finished #practice
 -Finished #learning
 -Started #thesisExbibit
+-Finished desktop version

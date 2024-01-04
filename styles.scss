@@ -1,12 +1,14 @@
 $color_1: rgb(90, 90, 90);
-$color_2: rgb(190, 190, 190);
-$color_3: rgb(220, 220, 220);
+$color_2: rgb(210, 210, 210);
+$color_3: rgb(230, 230, 230);
+$color_4: rgb(120, 120, 120);
 //$color_3: blue;
 $font-family_1: "Roboto", sans-serif;
-$background-color_1: rgb(190, 190, 190);
-$background-color_2: rgb(220, 220, 220);
-$background-color_3: rgb(110, 110, 110);
-$background-color_4: rgb(170, 170, 170);
+$background-color_1: rgb(210, 210, 210);
+$background-color_2: rgb(230, 230, 230);
+$background-color_3: rgb(170, 170, 170);
+$background-color_4: rgb(200, 200, 200);
+$background-color_5: rgb(120, 120, 120);
 //$background-color_3: #f0f0f0;
 
 * {
@@ -44,6 +46,7 @@ header {
   }
 
   nav {
+    color: $color_1;
     ul {
       text-align: right;
       display: inline-block;
@@ -83,6 +86,7 @@ header {
   #something {
     width: 330px;
     padding-right: 50px;
+    color: $color_1;
     h1 {
       font-size: 36px;
     }
@@ -97,11 +101,14 @@ header {
     align-items: center;
   }
   #button {
-    background-color: $background-color_3;
-    color: $color_2;
+    background-color: $background-color_5;
+    color: $color_3;
     justify-content: center;
     padding: 8px;
     width: 100%;
+  }
+  #button:hover {
+    background-color: $background-color_3;
   }
 }
 #practice {
@@ -112,15 +119,18 @@ header {
   #practicing {
     padding-right: 24px;
     width: 60%;
+
     img {
       width: 100%;
       margin-bottom: 32px;
     }
     h2 {
       font-size: 32px;
+      color: $color_1;
     }
     p {
       margin-top: 24px;
+      color: $color_4;
     }
   }
   #information {
@@ -153,6 +163,7 @@ header {
         align-items: flex-start;
         flex-direction: column;
         justify-content: center;
+        color: $color_1;
 
         p {
           margin: 8px 0;
@@ -161,7 +172,14 @@ header {
         a {
           font-size: 14px;
         }
+        a {
+          color: blue;
+          text-decoration: none;
+        }
       }
+    }
+    .informations:hover {
+      background-color: $background-color_3;
     }
   }
 }
@@ -173,6 +191,7 @@ header {
   font-size: 24px;
   text-align: center;
   margin-bottom: 32px;
+  color: $color_1;
 }
 #courses {
   display: grid;
@@ -187,8 +206,12 @@ header {
     }
     div {
       padding: 16px 16px 24px 16px;
+      h3 {
+        color: $color_1;
+      }
       p {
         font-size: 12px;
+        color: $color_4;
       }
       .coursing {
         margin: 8px 0;
@@ -196,56 +219,89 @@ header {
     }
   }
 }
-#thesisExhibit {
-  padding: 32px 24px;
+#thesisExbibit {
   background-color: $background-color_2;
-  display: flex;
+
   #teTitle {
     font-size: 24px;
     text-align: center;
-    margin-bottom: 32px;
+    padding: 32px 0;
+    color: $color_1;
   }
+  #thesCombo {
+    display: flex;
+    #thesis {
+      margin-left: 24px;
+      width: 60%;
+      video {
+        width: 100%;
+        margin: 0 0 24px 0;
+        padding-right: 24px;
+      }
+      div {
+        h3 {
+          color: $color_1;
+        }
+        p {
+          margin-top: 8px;
+          padding-bottom: 32px;
+          color: $color_4;
+        }
+      }
+    }
+    #exhibit {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
 
-  #thesis {
-    padding-right: 24px;
-    width: 60%;
-    video {
-      width: 100%;
-      margin-bottom: 24px;
+      .exhInfo {
+        display: flex;
+
+        .exhImage {
+          width: 35%;
+          padding: 16px;
+          img {
+            width: 100%;
+          }
+        }
+
+        .exhiSpec {
+          display: block;
+          width: 65%;
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          justify-content: center;
+          padding-right: 36px;
+          h3 {
+            color: $color_1;
+          }
+          p {
+            margin: 8px 0;
+            color: $color_4;
+            font-size: 14px;
+          }
+        }
+      }
+      .exhInfo:hover {
+        background-color: $background-color_3;
+      }
     }
   }
-  #exhibit {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-
-    .exhInfo {
-      display: flex;
-
-      .exhImage {
-        width: 35%;
-        padding: 16px;
-        img {
-          width: 100%;
-        }
-      }
-
-      .exhiSpec {
-        display: block;
-        width: 65%;
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        justify-content: center;
-
-        p {
-          margin: 8px 0;
-
-          font-size: 14px;
-        }
-      }
+}
+footer {
+  font-size: 12px;
+  margin-top: 16px;
+  padding: 0 24px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  color: $color_4;
+  #terms {
+    a {
+      margin-left: 12px;
     }
   }
 }

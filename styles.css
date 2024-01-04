@@ -18,7 +18,7 @@ header {
 header #combo {
   margin-left: 24px;
   text-decoration: none;
-  color: rgb(190, 190, 190);
+  color: rgb(210, 210, 210);
 }
 header #combo img {
   height: 42px;
@@ -31,6 +31,9 @@ header #combo span strong {
 }
 header .logos {
   vertical-align: middle;
+}
+header nav {
+  color: rgb(90, 90, 90);
 }
 header nav ul {
   text-align: right;
@@ -51,7 +54,7 @@ header nav ul li {
 }
 
 #start {
-  background-color: rgb(190, 190, 190);
+  background-color: rgb(210, 210, 210);
   display: flex;
   align-items: center;
 }
@@ -70,6 +73,7 @@ header nav ul li {
 #start #something {
   width: 330px;
   padding-right: 50px;
+  color: rgb(90, 90, 90);
 }
 #start #something h1 {
   font-size: 36px;
@@ -83,16 +87,19 @@ header nav ul li {
   align-items: center;
 }
 #start #button {
-  background-color: rgb(110, 110, 110);
-  color: rgb(190, 190, 190);
+  background-color: rgb(120, 120, 120);
+  color: rgb(230, 230, 230);
   justify-content: center;
   padding: 8px;
   width: 100%;
 }
+#start #button:hover {
+  background-color: rgb(170, 170, 170);
+}
 
 #practice {
   padding: 32px 24px;
-  background-color: rgb(220, 220, 220);
+  background-color: rgb(230, 230, 230);
   display: flex;
 }
 #practice #practicing {
@@ -105,9 +112,11 @@ header nav ul li {
 }
 #practice #practicing h2 {
   font-size: 32px;
+  color: rgb(90, 90, 90);
 }
 #practice #practicing p {
   margin-top: 24px;
+  color: rgb(120, 120, 120);
 }
 #practice #information {
   width: 40%;
@@ -121,7 +130,7 @@ header nav ul li {
 }
 #practice #information .informations {
   display: flex;
-  border-left: 1px solid rgb(190, 190, 190);
+  border-left: 1px solid rgb(210, 210, 210);
 }
 #practice #information .informations .imageSpec {
   width: 35%;
@@ -137,6 +146,7 @@ header nav ul li {
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
+  color: rgb(90, 90, 90);
 }
 #practice #information .informations .infoSpec p {
   margin: 8px 0;
@@ -145,9 +155,16 @@ header nav ul li {
 #practice #information .informations .infoSpec a {
   font-size: 14px;
 }
+#practice #information .informations .infoSpec a {
+  color: blue;
+  text-decoration: none;
+}
+#practice #information .informations:hover {
+  background-color: rgb(170, 170, 170);
+}
 
 #learning {
-  background-color: rgb(170, 170, 170);
+  background-color: rgb(200, 200, 200);
   padding: 32px 72px;
 }
 
@@ -155,6 +172,7 @@ header nav ul li {
   font-size: 24px;
   text-align: center;
   margin-bottom: 32px;
+  color: rgb(90, 90, 90);
 }
 
 #courses {
@@ -165,7 +183,7 @@ header nav ul li {
 }
 #courses .course {
   height: auto;
-  background-color: rgb(220, 220, 220);
+  background-color: rgb(230, 230, 230);
 }
 #courses .course img {
   width: 100%;
@@ -173,57 +191,93 @@ header nav ul li {
 #courses .course div {
   padding: 16px 16px 24px 16px;
 }
+#courses .course div h3 {
+  color: rgb(90, 90, 90);
+}
 #courses .course div p {
   font-size: 12px;
+  color: rgb(120, 120, 120);
 }
 #courses .course div .coursing {
   margin: 8px 0;
 }
 
-#thesisExhibit {
-  padding: 32px 24px;
-  background-color: rgb(220, 220, 220);
-  display: flex;
+#thesisExbibit {
+  background-color: rgb(230, 230, 230);
 }
-#thesisExhibit #teTitle {
+#thesisExbibit #teTitle {
   font-size: 24px;
   text-align: center;
-  margin-bottom: 32px;
+  padding: 32px 0;
+  color: rgb(90, 90, 90);
 }
-#thesisExhibit #thesis {
-  padding-right: 24px;
+#thesisExbibit #thesCombo {
+  display: flex;
+}
+#thesisExbibit #thesCombo #thesis {
+  margin-left: 24px;
   width: 60%;
 }
-#thesisExhibit #thesis video {
+#thesisExbibit #thesCombo #thesis video {
   width: 100%;
-  margin-bottom: 24px;
+  margin: 0 0 24px 0;
+  padding-right: 24px;
 }
-#thesisExhibit #exhibit {
+#thesisExbibit #thesCombo #thesis div h3 {
+  color: rgb(90, 90, 90);
+}
+#thesisExbibit #thesCombo #thesis div p {
+  margin-top: 8px;
+  padding-bottom: 32px;
+  color: rgb(120, 120, 120);
+}
+#thesisExbibit #thesCombo #exhibit {
   width: 40%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   position: relative;
 }
-#thesisExhibit #exhibit .exhInfo {
+#thesisExbibit #thesCombo #exhibit .exhInfo {
   display: flex;
 }
-#thesisExhibit #exhibit .exhInfo .exhImage {
+#thesisExbibit #thesCombo #exhibit .exhInfo .exhImage {
   width: 35%;
   padding: 16px;
 }
-#thesisExhibit #exhibit .exhInfo .exhImage img {
+#thesisExbibit #thesCombo #exhibit .exhInfo .exhImage img {
   width: 100%;
 }
-#thesisExhibit #exhibit .exhInfo .exhiSpec {
+#thesisExbibit #thesCombo #exhibit .exhInfo .exhiSpec {
   display: block;
   width: 65%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
+  padding-right: 36px;
 }
-#thesisExhibit #exhibit .exhInfo .exhiSpec p {
+#thesisExbibit #thesCombo #exhibit .exhInfo .exhiSpec h3 {
+  color: rgb(90, 90, 90);
+}
+#thesisExbibit #thesCombo #exhibit .exhInfo .exhiSpec p {
   margin: 8px 0;
+  color: rgb(120, 120, 120);
   font-size: 14px;
+}
+#thesisExbibit #thesCombo #exhibit .exhInfo:hover {
+  background-color: rgb(170, 170, 170);
+}
+
+footer {
+  font-size: 12px;
+  margin-top: 16px;
+  padding: 0 24px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(120, 120, 120);
+}
+footer #terms a {
+  margin-left: 12px;
 }/*# sourceMappingURL=styles.css.map */
