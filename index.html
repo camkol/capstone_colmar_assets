@@ -15,21 +15,41 @@
 
   <body>
     <header>
-      <a id="combo" href="">
-        <img src="images/ic-logo.svg" alt="logo" class="logos" /><span
-          class="logos"
-          ><strong>COLMAR</strong>ACADEMY</span
-        ></a
-      >
+      <div class="desktop">
+        <a id="combo" href="">
+          <img src="images/ic-logo.svg" alt="logo" class="logos" /><span
+            class="logos"
+            ><strong>COLMAR</strong>ACADEMY</span
+          ></a
+        >
 
-      <nav>
-        <ul>
-          <li id="one">On campus</li>
-          <li id="two">Online</li>
-          <li id="three">For companies</li>
-          <li id="four">Sign in</li>
-        </ul>
-      </nav>
+        <nav>
+          <ul>
+            <li id="one">On campus</li>
+            <li id="two">Online</li>
+            <li id="three">For companies</li>
+            <li id="four">Sign in</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mobile">
+        <nav>
+          <ul>
+            <li>
+              <a href=""><img src="images/ic-logo.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="images/ic-on-campus.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="images/ic-online.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="images/ic-login.svg" alt="" /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <section id="start">
       <div class="starters" id="banner">
@@ -44,7 +64,7 @@
       </div>
     </section>
     <section id="practice">
-      <div class="practices" id="practicing">
+      <div class="practices desktop" id="practicing">
         <img src="images/information-main.jpg" alt="main" />
         <h2>It doesn't hurt to keep practicing</h2>
         <p>
@@ -58,7 +78,16 @@
       <div class="practices" id="information">
         <div class="informations" id="imSpFirst">
           <div class="imageSpec">
-            <img src="images/information-orientation.jpg" alt="orientation" />
+            <img
+              class="desktop"
+              src="images/information-orientation.jpg"
+              alt="orientation"
+            />
+            <img
+              class="mobile"
+              src="images/information-campus-mobile.jpg"
+              alt="orientation"
+            />
           </div>
           <div class="infoSpec">
             <h3>Orientation date</h3>
@@ -66,9 +95,18 @@
             <a href="">Read more</a>
           </div>
         </div>
-        <div class="informations">
+        <div class="informations" id="imSpMiddle">
           <div class="imageSpec">
-            <img src="images/information-campus.jpg" alt="campus" />
+            <img
+              class="desktop"
+              src="images/information-campus.jpg"
+              alt="campus"
+            />
+            <img
+              class="mobile"
+              src="images/information-campus-mobile.jpg"
+              alt="campus"
+            />
           </div>
           <div class="infoSpec">
             <h3>Our campus</h3>
@@ -78,7 +116,16 @@
         </div>
         <div class="informations">
           <div class="imageSpec">
-            <img src="images/information-guest-lecture.jpg" alt="lecture" />
+            <img
+              class="desktop"
+              src="images/information-guest-lecture.jpg"
+              alt="lecture"
+            />
+            <img
+              class="mobile"
+              src="images/information-guest-lecture-mobile.jpg"
+              alt="lecture"
+            />
           </div>
           <div class="infoSpec">
             <h3>Our guest lecture</h3>
@@ -96,54 +143,80 @@
       </div>
       <div id="courses">
         <div class="course">
-          <img src="images/course-software.jpg" alt="software" />
+          <img
+            class="desktop"
+            src="images/course-software.jpg"
+            alt="software"
+          />
           <div>
             <h3>Software engineering</h3>
-            <p class="coursing">COURSES</p>
-            <p>Web Development, Mobile Development, iOT, APIs</p>
+            <p class="desktop" class="coursing">COURSES</p>
+            <p class="desktop">
+              Web Development, Mobile Development, iOT, APIs
+            </p>
           </div>
         </div>
         <div class="course">
-          <img src="images/course-computer-art.jpg" alt="computer-art" />
+          <img
+            class="desktop"
+            src="images/course-computer-art.jpg"
+            alt="computer-art"
+          />
           <div>
             <h3>Computer art</h3>
-            <p class="coursing">COURSES</p>
-            <p>
+            <p class="desktop" class="coursing">COURSES</p>
+            <p class="desktop">
               Imaging & Design, Web Design, Motion Graphics & Visual Effects,
               Computer Animation
             </p>
           </div>
         </div>
         <div class="course">
-          <img src="images/course-design.jpg" alt="design" />
+          <img class="desktop" src="images/course-design.jpg" alt="design" />
           <div>
             <h3>Design</h3>
-            <p class="coursing">COURSES</p>
-            <p>User Experience Design, User Research, Visual Design</p>
+            <p class="desktop" class="coursing">COURSES</p>
+            <p class="desktop">
+              User Experience Design, User Research, Visual Design
+            </p>
           </div>
         </div>
         <div class="course">
-          <img src="images/course-data.jpg" alt="data" />
+          <img class="desktop" src="images/course-data.jpg" alt="data" />
           <div>
             <h3>Data</h3>
-            <p class="coursing">COURSES</p>
-            <p>Data Science, Big Data, SQL, Data Visualization</p>
+            <p class="desktop" class="coursing">COURSES</p>
+            <p class="desktop">
+              Data Science, Big Data, SQL, Data Visualization
+            </p>
           </div>
         </div>
         <div class="course">
-          <img src="images/course-business.jpg" alt="business" />
+          <img
+            class="desktop"
+            src="images/course-business.jpg"
+            alt="business"
+          />
           <div>
             <h3>Business</h3>
-            <p class="coursing">COURSES</p>
-            <p>Product Development, Business Development, Startup</p>
+            <p class="desktop" class="coursing">COURSES</p>
+            <p class="desktop">
+              Product Development, Business Development, Startup
+            </p>
           </div>
         </div>
         <div class="course">
-          <img src="images/course-marketing.jpg" alt="marketing" />
+          <img
+            class="desktop"
+            src="images/course-marketing.jpg"
+            alt="marketing"
+          />
           <div>
             <h3>Marketing</h3>
-            <p class="coursing">COURSES</p>
-            <p>Analytics, Content Marketing, Mobile Marketing</p>
+            <p class="desktop" class="coursing">COURSES</p>
+            <p class="desktop">
+              Analytics, Content Marketing, Mobile Marketing
+            </p>
           </div>
         </div>
       </div>
@@ -156,8 +229,8 @@
         <div id="thesis">
           <video src="videos/thesis.mp4"></video>
           <div>
-            <h3>Reimagine urban</h3>
-            <p>
+            <h3 class="desktop">Reimagine urban</h3>
+            <p class="desktop">
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
               expedita id consequatur officia saepe optio ut, ex quae animi
               assumenda quas iure cumque cupiditate? Fugiat ab facere quae
@@ -165,7 +238,7 @@
             </p>
           </div>
         </div>
-        <div id="exhibit">
+        <div class="desktop" id="exhibit">
           <div class="exhInfo">
             <div class="exhImage">
               <img src="images/thesis-fisma.jpg" alt="fisma" />

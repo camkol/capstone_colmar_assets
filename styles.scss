@@ -2,6 +2,7 @@ $color_1: rgb(90, 90, 90);
 $color_2: rgb(210, 210, 210);
 $color_3: rgb(230, 230, 230);
 $color_4: rgb(120, 120, 120);
+
 //$color_3: blue;
 $font-family_1: "Roboto", sans-serif;
 $background-color_1: rgb(210, 210, 210);
@@ -22,50 +23,54 @@ body {
 }
 header {
   height: 64px;
-  display: flex;
 
-  justify-content: space-between;
-  align-items: center;
-  #combo {
-    margin-left: 24px;
-    text-decoration: none;
-    color: $color_2;
-    img {
-      height: 42px;
-    }
-    span {
-      font-size: 24px;
-      strong {
-        color: $color_1;
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    #combo {
+      margin-left: 24px;
+      text-decoration: none;
+      color: $color_2;
+      img {
+        height: 42px;
+      }
+      span {
+        font-size: 24px;
+        strong {
+          color: $color_1;
+        }
       }
     }
-  }
-  .logos {
-    //display: inline;
-    vertical-align: middle;
-  }
+    .logos {
+      //display: inline;
+      vertical-align: middle;
+    }
 
-  nav {
-    color: $color_1;
-    ul {
-      text-align: right;
-      display: inline-block;
-      list-style: none;
-      #one,
-      #two,
-      #three {
-        margin-right: 16px;
-      }
-      #four {
-        margin-right: 24px;
-      }
-      li {
-        text-decoration: none;
-        display: inline;
+    nav {
+      color: $color_1;
+      ul {
+        text-align: right;
+        display: inline-block;
+        list-style: none;
+        #one,
+        #two,
+        #three {
+          margin-right: 16px;
+        }
+        #four {
+          margin-right: 24px;
+        }
+        li {
+          text-decoration: none;
+          display: inline;
+        }
       }
     }
   }
 }
+
 #start {
   background-color: $background-color_1;
   display: flex;
@@ -249,48 +254,51 @@ header {
         }
       }
     }
-    #exhibit {
-      width: 40%;
+  }
+}
+@media screen and (min-width: 501px) {
+  #exhibit {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+
+    .exhInfo {
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      position: relative;
 
-      .exhInfo {
+      .exhImage {
+        width: 35%;
+        padding: 16px;
+        img {
+          width: 100%;
+        }
+      }
+
+      .exhiSpec {
+        display: block;
+        width: 65%;
         display: flex;
-
-        .exhImage {
-          width: 35%;
-          padding: 16px;
-          img {
-            width: 100%;
-          }
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 36px;
+        h3 {
+          color: $color_1;
         }
-
-        .exhiSpec {
-          display: block;
-          width: 65%;
-          display: flex;
-          align-items: flex-start;
-          flex-direction: column;
-          justify-content: center;
-          padding-right: 36px;
-          h3 {
-            color: $color_1;
-          }
-          p {
-            margin: 8px 0;
-            color: $color_4;
-            font-size: 14px;
-          }
+        p {
+          margin: 8px 0;
+          color: $color_4;
+          font-size: 14px;
         }
       }
-      .exhInfo:hover {
-        background-color: $background-color_3;
-      }
+    }
+    .exhInfo:hover {
+      background-color: $background-color_3;
     }
   }
 }
+
 footer {
   font-size: 12px;
   margin-top: 16px;
@@ -302,6 +310,85 @@ footer {
   #terms {
     a {
       margin-left: 12px;
+    }
+  }
+}
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  header {
+    div {
+      nav {
+        height: 100%;
+        ul {
+          height: 100%;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          li {
+            a {
+              img {
+                width: 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #start {
+    display: block;
+    .starters,
+    .starting {
+      display: block;
+    }
+    #banner {
+      padding: 0 0 32px 0;
+      width: 100%;
+    }
+    #something {
+      padding: 0 16px 32px 16px;
+      width: 100%;
+      h1 {
+        font-size: 34px;
+      }
+    }
+    #button {
+      padding: 8px auto;
+      text-align: center;
+      background-color: $background-color_3;
+    }
+  }
+  #practice {
+    display: block;
+    padding: 16px 16px 32px 16px;
+    #information {
+      display: block;
+      width: 100%;
+      #imSpMiddle {
+        margin: 64px 0;
+      }
+      .informations {
+        display: block;
+        border-left: none;
+        .imageSpec {
+          width: 100%;
+          padding: 0 0 16px 0;
+        }
+        .infoSpec {
+          display: block;
+          width: 100%;
+          padding: 0 16px;
+        }
+      }
     }
   }
 }

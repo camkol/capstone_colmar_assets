@@ -17,3 +17,6 @@
 -Started #thesisExbibit
 -Finished desktop version
 -Starting Responsive Design
+-Finished header
+-Finished #start
+-Finished #practice

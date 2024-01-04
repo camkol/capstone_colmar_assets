@@ -11,44 +11,47 @@ body {
 
 header {
   height: 64px;
+}
+header div {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
 }
-header #combo {
+header div #combo {
   margin-left: 24px;
   text-decoration: none;
   color: rgb(210, 210, 210);
 }
-header #combo img {
+header div #combo img {
   height: 42px;
 }
-header #combo span {
+header div #combo span {
   font-size: 24px;
 }
-header #combo span strong {
+header div #combo span strong {
   color: rgb(90, 90, 90);
 }
-header .logos {
+header div .logos {
   vertical-align: middle;
 }
-header nav {
+header div nav {
   color: rgb(90, 90, 90);
 }
-header nav ul {
+header div nav ul {
   text-align: right;
   display: inline-block;
   list-style: none;
 }
-header nav ul #one,
-header nav ul #two,
-header nav ul #three {
+header div nav ul #one,
+header div nav ul #two,
+header div nav ul #three {
   margin-right: 16px;
 }
-header nav ul #four {
+header div nav ul #four {
   margin-right: 24px;
 }
-header nav ul li {
+header div nav ul li {
   text-decoration: none;
   display: inline;
 }
@@ -231,44 +234,46 @@ header nav ul li {
   padding-bottom: 32px;
   color: rgb(120, 120, 120);
 }
-#thesisExbibit #thesCombo #exhibit {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-}
-#thesisExbibit #thesCombo #exhibit .exhInfo {
-  display: flex;
-}
-#thesisExbibit #thesCombo #exhibit .exhInfo .exhImage {
-  width: 35%;
-  padding: 16px;
-}
-#thesisExbibit #thesCombo #exhibit .exhInfo .exhImage img {
-  width: 100%;
-}
-#thesisExbibit #thesCombo #exhibit .exhInfo .exhiSpec {
-  display: block;
-  width: 65%;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: center;
-  padding-right: 36px;
-}
-#thesisExbibit #thesCombo #exhibit .exhInfo .exhiSpec h3 {
-  color: rgb(90, 90, 90);
-}
-#thesisExbibit #thesCombo #exhibit .exhInfo .exhiSpec p {
-  margin: 8px 0;
-  color: rgb(120, 120, 120);
-  font-size: 14px;
-}
-#thesisExbibit #thesCombo #exhibit .exhInfo:hover {
-  background-color: rgb(170, 170, 170);
-}
 
+@media screen and (min-width: 501px) {
+  #exhibit {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+  #exhibit .exhInfo {
+    display: flex;
+  }
+  #exhibit .exhInfo .exhImage {
+    width: 35%;
+    padding: 16px;
+  }
+  #exhibit .exhInfo .exhImage img {
+    width: 100%;
+  }
+  #exhibit .exhInfo .exhiSpec {
+    display: block;
+    width: 65%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 36px;
+  }
+  #exhibit .exhInfo .exhiSpec h3 {
+    color: rgb(90, 90, 90);
+  }
+  #exhibit .exhInfo .exhiSpec p {
+    margin: 8px 0;
+    color: rgb(120, 120, 120);
+    font-size: 14px;
+  }
+  #exhibit .exhInfo:hover {
+    background-color: rgb(170, 170, 170);
+  }
+}
 footer {
   font-size: 12px;
   margin-top: 16px;
@@ -280,4 +285,76 @@ footer {
 }
 footer #terms a {
   margin-left: 12px;
+}
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  header div nav {
+    height: 100%;
+  }
+  header div nav ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  header div nav ul li a img {
+    width: 2rem;
+  }
+  #start {
+    display: block;
+  }
+  #start .starters,
+  #start .starting {
+    display: block;
+  }
+  #start #banner {
+    padding: 0 0 32px 0;
+    width: 100%;
+  }
+  #start #something {
+    padding: 0 16px 32px 16px;
+    width: 100%;
+  }
+  #start #something h1 {
+    font-size: 34px;
+  }
+  #start #button {
+    padding: 8px auto;
+    text-align: center;
+    background-color: rgb(170, 170, 170);
+  }
+  #practice {
+    display: block;
+    padding: 16px 16px 32px 16px;
+  }
+  #practice #information {
+    display: block;
+    width: 100%;
+  }
+  #practice #information #imSpMiddle {
+    margin: 64px 0;
+  }
+  #practice #information .informations {
+    display: block;
+    border-left: none;
+  }
+  #practice #information .informations .imageSpec {
+    width: 100%;
+    padding: 0 0 16px 0;
+  }
+  #practice #information .informations .infoSpec {
+    display: block;
+    width: 100%;
+    padding: 0 16px;
+  }
 }/*# sourceMappingURL=styles.css.map */
