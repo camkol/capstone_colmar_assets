@@ -100,14 +100,44 @@ body #practice #practicing {
 }
 body #practice #practicing img {
   width: 100%;
+  margin-bottom: 32px;
 }
-body #practice #information .informations {
+body #practice #practicing h2 {
+  font-size: 32px;
+}
+body #practice #practicing p {
+  margin-top: 24px;
+}
+body #practice #information {
   width: 40%;
   display: flex;
+  flex-direction: column;
+}
+body #practice #information .informations {
+  display: flex;
+  flex-direction: row;
+  border-left: 1px solid rgb(190, 190, 190);
 }
 body #practice #information .informations .imageSpec {
+  width: 35%;
   padding: 16px;
 }
 body #practice #information .informations .imageSpec img {
-  width: 35%;
+  width: 100%;
+}
+body #practice #information .informations .infoSpec {
+  display: block;
+  width: 65%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 20px;
+}
+body #practice #information .informations .infoSpec p {
+  margin: 8px 0;
+}
+body #practice #information .informations .infoSpec p,
+body #practice #information .informations .infoSpec a {
+  font-size: 14px;
 }/*# sourceMappingURL=styles.css.map */
