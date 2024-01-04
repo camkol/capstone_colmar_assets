@@ -16,3 +16,4 @@
 -Finished #learning
 -Started #thesisExbibit
 -Finished desktop version
+-Starting Responsive Design
