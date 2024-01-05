@@ -21,3 +21,4 @@
 -Finished #start
 -Finished #practice
 -Improved responsiveness for Mobile
+-Repaired Video
