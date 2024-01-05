@@ -20,3 +20,4 @@
 -Finished header
 -Finished #start
 -Finished #practice
+-Improved responsiveness for Mobile

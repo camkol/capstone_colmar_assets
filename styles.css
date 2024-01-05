@@ -102,7 +102,7 @@ header div nav ul li {
 
 #practice {
   padding: 32px 24px;
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(240, 240, 240);
   display: flex;
 }
 #practice #practicing {
@@ -186,7 +186,7 @@ header div nav ul li {
 }
 #courses .course {
   height: auto;
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(240, 240, 240);
 }
 #courses .course img {
   width: 100%;
@@ -205,31 +205,32 @@ header div nav ul li {
   margin: 8px 0;
 }
 
-#thesisExbibit {
-  background-color: rgb(230, 230, 230);
+#thesisExhibit {
+  background-color: rgb(240, 240, 240);
+  border-bottom: 1px solid rgb(210, 210, 210);
 }
-#thesisExbibit #teTitle {
+#thesisExhibit #teTitle {
   font-size: 24px;
   text-align: center;
   padding: 32px 0;
   color: rgb(90, 90, 90);
 }
-#thesisExbibit #thesCombo {
+#thesisExhibit #thesCombo {
   display: flex;
 }
-#thesisExbibit #thesCombo #thesis {
+#thesisExhibit #thesCombo #thesis {
   margin-left: 24px;
   width: 60%;
 }
-#thesisExbibit #thesCombo #thesis video {
+#thesisExhibit #thesCombo #thesis video {
   width: 100%;
   margin: 0 0 24px 0;
   padding-right: 24px;
 }
-#thesisExbibit #thesCombo #thesis div h3 {
+#thesisExhibit #thesCombo #thesis div h3 {
   color: rgb(90, 90, 90);
 }
-#thesisExbibit #thesCombo #thesis div p {
+#thesisExhibit #thesCombo #thesis div p {
   margin-top: 8px;
   padding-bottom: 32px;
   color: rgb(120, 120, 120);
@@ -336,6 +337,8 @@ footer #terms a {
   #practice {
     display: block;
     padding: 16px 16px 32px 16px;
+    background-color: white;
+    border-bottom: 1px solid rgb(210, 210, 210);
   }
   #practice #information {
     display: block;
@@ -356,5 +359,46 @@ footer #terms a {
     display: block;
     width: 100%;
     padding: 0 16px;
+  }
+  #learning {
+    background-color: white;
+    padding: 32px 16px;
+    border-bottom: 1px solid rgb(210, 210, 210);
+  }
+  #learning #startLearn {
+    padding-bottom: 8px;
+    margin-bottom: 0;
+  }
+  #learning #courses {
+    display: block;
+  }
+  #learning #courses .course {
+    margin-top: 8px;
+  }
+  #learning #courses .course div h3 {
+    padding: 16px 16px 24px 16px;
+  }
+  #thesisExhibit {
+    background-color: white;
+    border: none;
+  }
+  #thesisExhibit #teTitle {
+    padding-bottom: 16px;
+  }
+  #thesisExhibit #thesCombo {
+    display: block;
+  }
+  #thesisExhibit #thesCombo #thesis {
+    margin: 0;
+    width: 100%;
+    padding-bottom: 24px;
+  }
+  #thesisExhibit #thesCombo #thesis video {
+    padding: 0;
+    margin: 0;
+  }
+  footer {
+    height: auto;
+    padding-bottom: 16px;
   }
 }/*# sourceMappingURL=styles.css.map */
