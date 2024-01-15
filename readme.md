@@ -22,3 +22,4 @@
 -Finished #practice
 -Improved responsiveness for Mobile
 -Repaired Video
+-added process.md
