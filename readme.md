@@ -23,3 +23,4 @@
 -Improved responsiveness for Mobile
 -Repaired Video
 -added process.md
+-removed process.md
